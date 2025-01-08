@@ -1,3 +1,6 @@
+from books import BookNotFoundError
+
+
 class User:
     def __init__(self, name):
         self.name = name
@@ -11,4 +14,10 @@ class User:
             if book.title == title:
                 self.books.remove(book)
                 return
+
+        raise BookNotFoundError
+
+
+class UserNotFoundError(Exception):
+    pass
 

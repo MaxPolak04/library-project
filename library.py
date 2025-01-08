@@ -1,4 +1,4 @@
-from books import FictionBook, NonFictionBook
+from books import FictionBook, NonFictionBook, BookNotFoundError, BookNotAvailableError
 
 
 class Library:
@@ -18,6 +18,10 @@ class Library:
             if book.title == title and book.available:
                 book.available = False
                 return book
+            elif book.title == title and not book.available:
+                raise BookNotAvailableError
+
+        raise BookNotFoundError
 
     def return_book(self, title):
         for book in self.books:

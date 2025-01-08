@@ -41,3 +41,11 @@ class FictionBook(Book):
         super().display_common_book_info()
         print(f'Gatunek: {self.genre}')
         print(f'Streszczenie: {self.synopsis}')
+
+
+class BookNotFoundError(Exception):
+    pass
+
+
+class BookNotAvailableError(Exception):
+    pass
