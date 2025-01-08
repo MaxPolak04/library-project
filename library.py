@@ -1,17 +1,10 @@
-from books import FictionBook, NonFictionBook, BookNotFoundError, BookNotAvailableError
+from books import BookNotFoundError, BookNotAvailableError
+from initializer import Initializer
 
 
 class Library:
     def __init__(self):
-        self.books = []
-
-        book1 = FictionBook('Tytuł', 'Autor', 200,
-                            True, 'Horror', 'Wampiry atakują miasto')
-        book2 = NonFictionBook('Python', 'Kamil Brzeziński', 300,
-                               True, 'Programowanie', 'Początkujący')
-
-        self.books.append(book1)
-        self.books.append(book2)
+        self.books = Initializer.init_books()
 
     def borrow_book(self, title):
         for book in self.books:
@@ -29,3 +22,6 @@ class Library:
                 book.available = True
                 return
 
+    def display_books(self):
+        for book in self.books:
+            book.display_book_info()

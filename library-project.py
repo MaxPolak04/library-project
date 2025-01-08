@@ -1,17 +1,16 @@
 import sys
-from users import User, UserNotFoundError
-from books import FictionBook, NonFictionBook, BookNotFoundError, BookNotAvailableError
+from users import UserNotFoundError
+from books import BookNotFoundError, BookNotAvailableError
 from library import Library
+from initializer import Initializer
 
 
 def display_library_books(library):
-    for book in library.books:
-        book.display_book_info()
+    library.display_books()
 
 
 def display_borrowed_books(user):
-    for book in user.books:
-        book.display_book_info()
+    user.display_books()
 
 
 def borrow_book(user, library):
@@ -46,11 +45,7 @@ def login(users, name):
 
 if __name__ == "__main__":
     library = Library()
-    user1 = User('Kamil')
-    user2 = User('Mariusz')
-    user3 = User('Dominik')
-
-    users = [user1, user2, user3]
+    users = Initializer.init_users()
 
     user = None
 

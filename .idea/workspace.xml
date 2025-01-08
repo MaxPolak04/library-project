@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="641ac590-36f3-4de4-a367-0abb5131e782" name="Changes" comment="added some code">
+    <list default="true" id="641ac590-36f3-4de4-a367-0abb5131e782" name="Changes" comment="added some better code">
+      <change afterPath="$PROJECT_DIR$/initializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books.py" beforeDir="false" afterPath="$PROJECT_DIR$/books.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library-project.py" beforeDir="false" afterPath="$PROJECT_DIR$/library-project.py" afterDir="false" />
@@ -123,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736342781991</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added some better code">
+      <option name="closed" value="true" />
+      <created>1736344625164</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736344625164</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +150,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="added new files" />
     <MESSAGE value="added some code" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some code" />
+    <MESSAGE value="added some better code" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some better code" />
   </component>
 </project>

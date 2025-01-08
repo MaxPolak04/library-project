@@ -17,6 +17,10 @@ class User:
 
         raise BookNotFoundError
 
+    def display_books(self):
+        for book in self.books:
+            book.display_book_info()
+
 
 class UserNotFoundError(Exception):
     pass
